@@ -1,0 +1,106 @@
+body {
+  /* background: #009578; */
+  background-image: url(/Kalbounyan_Board_Kanban/img/image2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+.header {
+  text-align: center;
+  font-size: 70px;
+  text-decoration: underline;
+  /* color: #fff; */
+  color: #009578;
+}
+
+.kanban {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* margin: auto; */
+  padding: 20px;
+
+  /* background: #009578; */
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.kanban--column {
+  flex: 1;
+  margin-right: 30px;
+  padding: 20px;
+}
+
+.box {
+  display: flex;
+  width: 100%;
+  padding: 5px 2px;
+  background: #fff;
+  border: none;
+  border-radius: 5px;
+  gap: 4px;
+}
+
+.taskBtns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.taskBtn {
+  text-align: center;
+  width: 40px;
+  aspect-ratio: 1;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.taskBtn:hover {
+  background-color: #009578;
+  color: #fff;
+}
+
+.kanban--column-title {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #009578;
+  user-select: none;
+  font-weight: bold;
+}
+
+.kanban--item-input {
+  width: 100%;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.kanban--dropzone {
+  height: 10px;
+  transition: background 0.15s, height 0.15s;
+}
+
+.kanban--dropzone--active {
+  height: 100px;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.kanban--add-item {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  background: rgba(0, 149, 120, 0.6);
+
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
